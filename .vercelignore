@@ -1,0 +1,10 @@
+source/
+build/
+node_modules/
+source/
+.eslint
+.gitignore
+firebaseCredentialDevelop.json
+jsconfig.json
+readme.md
+webpack.config.js
