@@ -5,7 +5,6 @@ const webhook = async (request, response) => {
   const documentPath = request.body.transaction.order_id
 
   if (request.body.type !== 'charge.succeeded') return response.success()
-  console.log('request', request.body)
 
   // get document date
   try {
