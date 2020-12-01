@@ -5,6 +5,7 @@ import response from './middlewares/response'
 import TokenExtract from 'express-bearer-token'
 import payments from './modules/payments'
 import cors from 'cors'
+import email from './modules/email'
 const functions = require('firebase-functions')
 
 const router = Router()
@@ -14,6 +15,7 @@ router.use(cors())
 router.use(json())
 router.use(response)
 router.use(TokenExtract())
+router.use('/email', email)
 
 // modules
 router.use('/payments', payments)
