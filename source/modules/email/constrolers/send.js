@@ -41,7 +41,7 @@ const send = async (request, response) => {
         html: html,
         attachments: [
           {
-            filename: 'reibo.pdf',
+            filename: 'recibo.pdf',
             content: buffer,
             contentType: 'application/pdf'
           }
