@@ -23,7 +23,7 @@ const Store = async (request, response) => {
     order_id: request.body.path,
     currency: 'MXN',
     method: 'store',
-    description: 'checkout',
+    description: 'Pago de productos Santa Cruz',
     amount: request.body.amount,
     device_session_id: request.body.deviceId,
     customer: {

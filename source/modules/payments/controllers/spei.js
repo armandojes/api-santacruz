@@ -23,7 +23,7 @@ const spei = async (request, response) => {
     order_id: request.body.path,
     currency: 'MXN',
     method: 'bank_account',
-    description: 'checkout',
+    description: 'Pago de productos Santa Cruz',
     amount: request.body.amount,
     device_session_id: request.body.deviceId,
     customer: {
